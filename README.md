@@ -1,2 +1,19 @@
-# Phone-Router
- Bu küçük program linkteki telefon numarasını otomatik olarak tıklar. Sosyal medya hikaye paylaşımları için telefon numarası ekleme olanağı sağlar
+# Phone Router
+
+Instagram hikayelerinde bağlantı olarak telefon numarası paylaşmanızı sağlayan küçük bir koddur.  
+
+## Ayarlar
+
+1. İndex.php dosyasını herhangi bir kod editörle aç.
+2. 20\. satırdaki "image.url/image" yazısını logonuzla değiştir.
+3. Kaydet ve sunucuna yükle.  
+
+## Kullanım
+
+Sunucuza yükledikten sonra GET girişini “router.domain.tld/?tel=+995554443322” şeklinde yazdığınız linki instagram hikaye bağlantınıza ekleyebilirsiniz. Hayranlarınız bağlantıya tıkladığına doğrudan telefon numarasını çevirmiş olacaklar.
+
+## TEST
+
+IOS  ✔
+Android  ✔
+Windows Phone ❌
