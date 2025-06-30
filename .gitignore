@@ -1,0 +1,239 @@
+# Phone Router .gitignore
+# Gereksiz dosyaların GitHub'a yüklenmemesi için
+
+# ========================================
+# VERİ DOSYALARI
+# ========================================
+
+# Analytics verileri
+data/analytics.txt
+data/*.txt
+data/*.log
+
+# Geçici dosyalar
+*.tmp
+*.temp
+*.cache
+
+# ========================================
+# SİSTEM DOSYALARI
+# ========================================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ========================================
+# IDE VE EDITÖR DOSYALARI
+# ========================================
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+
+# PHPStorm/IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# NetBeans
+nbproject/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Eclipse
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# ========================================
+# LOG DOSYALARI
+# ========================================
+
+# PHP error logs
+error_log
+php_errors.log
+*.log
+
+# Apache/Nginx logs
+access.log
+error.log
+
+# ========================================
+# GÜVENLİK DOSYALARI
+# ========================================
+
+# Konfigürasyon dosyaları (production'da gizli tutulmalı)
+config.php
+.env
+.env.local
+.env.production
+
+# SSL sertifikaları
+*.pem
+*.key
+*.crt
+*.csr
+
+# ========================================
+# YEDEK DOSYALARI
+# ========================================
+
+# Backup dosyaları
+*.bak
+*.backup
+*.old
+*.orig
+*.save
+*~
+
+# ========================================
+# GEÇİCİ DOSYALAR
+# ========================================
+
+# PHP session dosyaları
+sessions/
+*.sess
+
+# Upload geçici dosyaları
+uploads/temp/
+temp/
+tmp/
+
+# ========================================
+# PAKET YÖNETİCİ DOSYALARI
+# ========================================
+
+# Composer
+vendor/
+composer.lock
+composer.phar
+
+# NPM
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# ========================================
+# BUILD VE DEPLOY DOSYALARI
+# ========================================
+
+# Build dosyaları
+build/
+dist/
+out/
+
+# Deployment dosyaları
+.deploy/
+deploy.sh
+deploy.php
+
+# ========================================
+# TEST DOSYALARI
+# ========================================
+
+# Test dosyaları
+tests/
+test.php
+test_*.php
+*_test.php
+
+# ========================================
+# ÖZEL DOSYALAR
+# ========================================
+
+# Kullanıcı özel dosyaları
+user_config.php
+local_config.php
+custom_config.php
+
+# Debug dosyaları
+debug.php
+debug_*.php
+
+# ========================================
+# ZIP VE ARŞİV DOSYALARI
+# ========================================
+
+# Sıkıştırılmış dosyalar
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.tgz
+
+# ========================================
+# MEDYA DOSYALARI (İsteğe bağlı)
+# ========================================
+
+# Büyük medya dosyaları (isteğe bağlı)
+# assets/images/*.mp4
+# assets/images/*.avi
+# assets/images/*.mov
+# assets/images/*.wmv
+
+# ========================================
+# NOTLAR
+# ========================================
+
+# Bu dosyalar GitHub'a yüklenmeyecek:
+# - Analytics verileri (data/analytics.txt)
+# - Konfigürasyon dosyaları (config.php)
+# - Log dosyaları
+# - Geçici dosyalar
+# - IDE ayar dosyaları
+# - Sistem dosyaları
+
+# Önemli: config.php dosyasını production'da gizli tutun!
+# Örnek konfigürasyon için config-example.php kullanın. 

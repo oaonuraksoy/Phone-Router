@@ -1,0 +1,156 @@
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	margin: 0;
+	padding: 20px;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	background: white;
+	border-radius: 20px;
+	padding: 40px;
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	max-width: 500px;
+	width: 100%;
+}
+
+.logo {
+	width: 120px;
+	height: 120px;
+	background: linear-gradient(45deg, #667eea, #764ba2);
+	border-radius: 50%;
+	margin: 0 auto 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 60px;
+}
+
+.phone-number {
+	font-size: 28px;
+	font-weight: bold;
+	color: #2c3e50;
+	margin: 20px 0;
+	padding: 15px;
+	background: #f8f9fa;
+	border-radius: 10px;
+	border: 2px solid #e9ecef;
+}
+
+.call-button {
+	background: linear-gradient(45deg, #28a745, #20c997);
+	color: white;
+	border: none;
+	padding: 15px 30px;
+	border-radius: 50px;
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+	text-decoration: none;
+	display: inline-block;
+	margin: 10px;
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.call-button:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 10px 20px rgba(40, 167, 69, 0.3);
+}
+
+.error {
+	background: #f8d7da;
+	color: #721c24;
+	padding: 15px;
+	border-radius: 10px;
+	margin: 20px 0;
+	border: 1px solid #f5c6cb;
+}
+
+.info {
+	background: #d1ecf1;
+	color: #0c5460;
+	padding: 15px;
+	border-radius: 10px;
+	margin: 20px 0;
+	border: 1px solid #bee5eb;
+}
+
+.footer {
+	margin-top: 30px;
+	font-size: 14px;
+	color: #6c757d;
+}
+
+.footer a {
+	color: #667eea;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.loading {
+	display: none;
+	margin: 20px 0;
+}
+
+.spinner {
+	border: 4px solid #f3f3f3;
+	border-top: 4px solid #667eea;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	animation: spin 1s linear infinite;
+	margin: 0 auto;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	.container {
+		padding: 20px;
+		margin: 10px;
+	}
+	
+	.phone-number {
+		font-size: 24px;
+	}
+	
+	.call-button {
+		font-size: 16px;
+		padding: 12px 24px;
+	}
+}
+
+@media (max-width: 480px) {
+	body {
+		padding: 10px;
+	}
+	
+	.container {
+		padding: 15px;
+	}
+	
+	.logo {
+		width: 80px;
+		height: 80px;
+		font-size: 40px;
+	}
+	
+	.phone-number {
+		font-size: 20px;
+		padding: 10px;
+	}
+} 

@@ -1,3 +1,5 @@
+# Phone Router - Minimal .htaccess
 RewriteEngine On
-# RewriteRule ^\+(.*)$ /index.php?phone=$1 [L]
-RewriteRule ^\+?([0-9]+)$ /index.php?tel=$1 [L]
+
+# Phone number redirect rule
+RewriteRule ^\+?([0-9]+)$ /index.php?tel=$1 [L] 
