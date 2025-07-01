@@ -1,9 +1,12 @@
-# Phone Router v2.0 - Instagram Telefon Bağlantısı
+[🇬🇧 English Documentation](README_EN.md)
+
+# Phone Router v2.0.1 - Instagram Telefon Bağlantısı
 
 Instagram hikayelerinde ve sosyal medyada telefon numarası paylaşımı için profesyonel çözüm. Müşterileriniz tek tıkla direkt arama yapabilir.
 
-## ✨ Yeni Özellikler (v2.0)
+## ✨ Yeni Özellikler (v2.0.1)
 
+- 🛠️ **Kurulum Ekranı**: Artık ilk kurulumda config.php yoksa otomatik olarak kurulum ekranı açılır ve gerekli bilgiler girilerek config.php dosyası oluşturulur.
 - 🔒 **Güvenlik Geliştirmeleri**: XSS koruması, güvenlik başlıkları
 - 🌍 **Çoklu Ülke Desteği**: Türkiye, ABD, İngiltere ve diğer ülkeler
 - 📊 **Analytics Sistemi**: Tıklama istatistikleri ve detaylı raporlar
@@ -17,14 +20,17 @@ Instagram hikayelerinde ve sosyal medyada telefon numarası paylaşımı için p
 
 ## 🚀 Kurulum
 
-1. Tüm dosyaları web sunucunuza yükleyin
-2. `config.php` dosyasını düzenleyerek kendi firma bilgilerinizi girin
-3. Dosya izinlerini kontrol edin:
+1. Tüm dosyaları web sunucunuza yükleyin.
+2. Siteye ilk girişte otomatik olarak kurulum ekranı açılır (config.php yoksa).
+3. Kurulum formunu doldurun ve config.php otomatik oluşturulacaktır.
+4. Dosya izinlerini kontrol edin:
    - `data/` klasörü yazılabilir olmalı (755)
    - `includes/` klasörü okunabilir olmalı (644)
-4. Tarayıcınızda test edin
+5. Tarayıcınızda test edin.
 
 ## 🎨 Özelleştirme
+
+Kurulumdan sonra config.php dosyasını düzenleyerek tüm ayarları değiştirebilirsiniz. Ayrıca, `config-example.php` dosyasını da referans olarak kullanabilirsiniz.
 
 ### Hızlı Kurulum
 1. `config-example.php` dosyasını `config.php` olarak kopyalayın
@@ -170,18 +176,22 @@ Phone-Router/
 
 ## 🔄 Güncelleme Geçmişi
 
-### v2.0 (Güncel)
+#### v2.0.1 (Son Sürüm)
+- Kurulum ekranı eklendi. Artık config.php yoksa otomatik kurulum başlatılır.
+- Küçük hata düzeltmeleri ve iyileştirmeler.
+
+#### v2.0
 - Çoklu ülke desteği eklendi
 - Analytics sistemi eklendi
 - Modern UI tasarımı
 - Güvenlik geliştirmeleri
 - Hata yönetimi iyileştirildi
-- **Organize klasör yapısı**
-- **Gelişmiş güvenlik (.htaccess)**
-- **20+ ülke kodu desteği**
-- **🎨 Kolay özelleştirme sistemi**
+- Organize klasör yapısı
+- Gelişmiş güvenlik (.htaccess)
+- 20+ ülke kodu desteği
+- Kolay özelleştirme sistemi
 
-### v1.0
+#### v1.0
 - Temel telefon yönlendirme
 - Basit arayüz
 

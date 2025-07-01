@@ -1,4 +1,10 @@
 <?php
+// Eğer config.php yoksa kurulum ekranına yönlendir
+if (!file_exists('config.php')) {
+    header('Location: setup.php');
+    exit;
+}
+
 // Load configuration
 require_once 'config.php';
 
